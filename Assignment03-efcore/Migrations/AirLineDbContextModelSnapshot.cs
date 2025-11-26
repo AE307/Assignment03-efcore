@@ -44,7 +44,7 @@ namespace Assignment03_efcore.Migrations
 
                     b.HasIndex("AirlineId");
 
-                    b.ToTable("Aircrafts");
+                    b.ToTable("Aircrafts", (string)null);
                 });
 
             modelBuilder.Entity("Assignment03_efcore.Models.Airline", b =>
@@ -73,7 +73,7 @@ namespace Assignment03_efcore.Migrations
 
                     b.HasKey("AirlineId");
 
-                    b.ToTable("Airlines");
+                    b.ToTable("Airlines", (string)null);
                 });
 
             modelBuilder.Entity("Assignment03_efcore.Models.Employee", b =>
@@ -95,7 +95,7 @@ namespace Assignment03_efcore.Migrations
 
                     b.HasIndex("AirlineId");
 
-                    b.ToTable("Employees");
+                    b.ToTable("Employees", (string)null);
                 });
 
             modelBuilder.Entity("Assignment03_efcore.Models.Route", b =>
@@ -123,7 +123,7 @@ namespace Assignment03_efcore.Migrations
 
                     b.HasKey("RouteId");
 
-                    b.ToTable("Routes");
+                    b.ToTable("Routes", (string)null);
                 });
 
             modelBuilder.Entity("Assignment03_efcore.Models.RouteAssignment", b =>
@@ -144,7 +144,7 @@ namespace Assignment03_efcore.Migrations
 
                     b.HasIndex("AircraftId");
 
-                    b.ToTable("RouteAssignments");
+                    b.ToTable("RouteAssignments", (string)null);
                 });
 
             modelBuilder.Entity("Assignment03_efcore.Models.Transaction", b =>
@@ -172,7 +172,7 @@ namespace Assignment03_efcore.Migrations
 
                     b.HasIndex("AirlineId");
 
-                    b.ToTable("Transactions");
+                    b.ToTable("Transactions", (string)null);
                 });
 
             modelBuilder.Entity("Assignment03_efcore.Models.Aircraft", b =>
@@ -202,7 +202,7 @@ namespace Assignment03_efcore.Migrations
 
                             b1.HasKey("AircraftId");
 
-                            b1.ToTable("Aircrafts");
+                            b1.ToTable("Aircrafts", (string)null);
 
                             b1.WithOwner()
                                 .HasForeignKey("AircraftId");
